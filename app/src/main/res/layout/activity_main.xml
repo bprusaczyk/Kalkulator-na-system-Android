@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/wynik"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_weight=".5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/przycisk1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/przycisk2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/przycisk3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/przyciskPlus"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/przyciskRazy"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="*" />
+
+                <Button
+                    android:id="@+id/przyciskKropka"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/przycisk4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/przycisk5"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/przycisk6"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="6" />
+
+                <Button
+                    android:id="@+id/przyciskMinus"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="-" />
+
+                <Button
+                    android:id="@+id/przyciskPodzielic"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="/" />
+
+                <Button
+                    android:id="@+id/przyciskZmianaZnaku"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".16"
+                    android:onClick="klik"
+                    android:text="+/-" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/przycisk7"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:onClick="klik"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/przycisk8"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:onClick="klik"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/przycisk9"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:onClick="klik"
+                    android:text="9" />
+
+                <Button
+                    android:id="@+id/przycisk0"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:onClick="klik"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/przyciskRownaSie"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:onClick="klik"
+                    android:text="=" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
